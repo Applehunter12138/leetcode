@@ -19,8 +19,8 @@ class LinkList:
     def insertNode(self, index, item):
         assert(index >= 0 and index <= self.size)
 
-        if not isinstance(item, ListNode):
-            item = ListNode(item)
+        if not isinstance(item, ListNode.ListNode):
+            item = ListNode.ListNode(item)
         
         if index == 0:
             if self.tail == None:

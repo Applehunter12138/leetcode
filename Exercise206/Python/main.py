@@ -5,15 +5,15 @@ class Solution():
         self.linklist = linklist
 
     def reverseList(self) -> LinkList:
-        result = LinkList()
+        result = LinkList.LinkList()
         for i in range(0, self.linklist.size):
-            result.insertNode(0, self.linklist.get(i))
+            result.insertNode(0, self.linklist.get(i).data)
         return result
 
 def main():
-    linklist = LinkList()
+    linklist = LinkList.LinkList()
     for i in range(0, 5):
-        linklist.insertNode(0, i+1)
+        linklist.insertNode(linklist.size, i+1)
     
     testInput = Solution(linklist)
     result = testInput.reverseList()
