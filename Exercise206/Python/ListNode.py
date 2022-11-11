@@ -8,3 +8,4 @@ class ListNode:
             return True
         else:
             return False
+            
