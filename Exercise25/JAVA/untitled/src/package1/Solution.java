@@ -1,6 +1,7 @@
 package package1;
 
 import package2.LinkList;
+import package2.Node;
 
 public class Solution<T> {
     LinkList<T> linkList;
@@ -9,7 +10,7 @@ public class Solution<T> {
         this.linkList = linkList;
     }
 
-    public LinkList<T>.Node reverseKGroup(int k) throws Exception {
+    public Node<T> reverseKGroup(int k) throws Exception {
         LinkList<T> result = new LinkList<>();
 
         if(k > linkList.size) {
