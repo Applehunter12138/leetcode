@@ -19,9 +19,7 @@ class Solution:
                 leftBrackets.pop()
             else:
                 leftBrackets.append(i)
-            
-        
-        
+                
         return not leftBrackets
 
 def main():
